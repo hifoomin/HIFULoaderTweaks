@@ -9,6 +9,7 @@ namespace HIFULoaderTweaks.Skills
     {
         public static float massLimit;
         public static float cooldown;
+        public static float range;
 
         public override string Name => ": Secondary :: Spiked Fist";
 
@@ -20,6 +21,7 @@ namespace HIFULoaderTweaks.Skills
         {
             massLimit = ConfigOption(500f, "Mass Limit", "Vanilla is 250");
             cooldown = ConfigOption(5f, "Cooldown", "Vanilla is 5");
+            range = ConfigOption(80f, "Max Range", "Vanilla is 80");
             base.Init();
         }
 
@@ -33,6 +35,7 @@ namespace HIFULoaderTweaks.Skills
             var spikedFist = Addressables.LoadAssetAsync<GameObject>("RoR2/Base/Loader/LoaderYankHook.prefab").WaitForCompletion();
             var projectileGrappleController = spikedFist.GetComponent<ProjectileGrappleController>();
             projectileGrappleController.yankMassLimit = massLimit;
+            projectileGrappleController.maxTravelDistance = range;
 
             var spiked = Addressables.LoadAssetAsync<SkillDef>("RoR2/Base/Loader/FireYankHook.asset").WaitForCompletion();
             spiked.baseRechargeInterval = cooldown;
