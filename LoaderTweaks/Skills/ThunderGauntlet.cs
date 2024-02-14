@@ -21,9 +21,9 @@ namespace HIFULoaderTweaks.Skills
         {
             damage = ConfigOption(14f, "Damage", "Decimal. Vanilla is ???");
             chargeRate = ConfigOption(0.4f, "Charge Duration", "Vanilla is 0.4");
-            speedCoeff = ConfigOption(0.13f, "Speed Coefficient", "Decimal. Vanilla is 0.3");
+            speedCoeff = ConfigOption(0.17f, "Speed Coefficient", "Decimal. Vanilla is 0.3");
             cooldown = ConfigOption(5f, "Cooldown", "Vanilla is 5");
-            formula = ConfigOption(true, "Damage Formula", "Damage + SpeedCoeff * (Current velocity - 70)");
+            formula = ConfigOption(true, "Damage Formula", "Damage + SpeedCoeff * (Current velocity - 90)");
             base.Init();
         }
 

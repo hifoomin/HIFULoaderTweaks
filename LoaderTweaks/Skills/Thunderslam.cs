@@ -53,7 +53,7 @@ namespace HIFULoaderTweaks.Skills
         {
             if (characterBody.HasBuff(fallDamageReduction))
             {
-                impactVelocity *= 0.7f;
+                impactVelocity *= 0.75f;
             }
             orig(self, characterBody, impactVelocity);
         }

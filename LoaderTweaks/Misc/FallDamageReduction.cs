@@ -12,7 +12,7 @@ namespace HIFULoaderTweaks.Misc
 
         public override void Init()
         {
-            fallDamageReduction = ConfigOption(0.7f, "Fall Damage Reduction", "Decimal. Vanilla is 1");
+            fallDamageReduction = ConfigOption(0.6f, "Fall Damage Reduction", "Decimal. Vanilla is 1");
             base.Init();
         }
 

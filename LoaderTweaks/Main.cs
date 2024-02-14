@@ -19,7 +19,7 @@ namespace HIFULoaderTweaks
 
         public const string PluginAuthor = "HIFU";
         public const string PluginName = "HIFULoaderTweaks";
-        public const string PluginVersion = "1.1.3";
+        public const string PluginVersion = "1.1.5";
 
         public static ConfigFile HLTConfig;
         public static ConfigFile HLTBackupConfig;

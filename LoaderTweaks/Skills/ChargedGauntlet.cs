@@ -10,7 +10,6 @@ namespace HIFULoaderTweaks.Skills
         public static float maxDamage;
         public static float chargeRate;
         public static float speedCoeff;
-        public static float maxLungeSpeed;
         public static float cooldown;
         public static bool formula;
 
@@ -25,10 +24,9 @@ namespace HIFULoaderTweaks.Skills
             minDamage = ConfigOption(5f, "Minimum Damage", "Decimal. Vanilla is ???");
             maxDamage = ConfigOption(18f, "Maximum Damage", "Decimal. Vanilla is ???");
             chargeRate = ConfigOption(2f, "Charge Duration", "Vanilla is 2.5");
-            speedCoeff = ConfigOption(0.26f, "Speed Coefficient", "Decimal. Vanilla is 0.3");
-            maxLungeSpeed = ConfigOption(70f, "Max Lunge Speed", "Vanilla is 90");
+            speedCoeff = ConfigOption(0.45f, "Speed Coefficient", "Decimal. Vanilla is 0.3");
             cooldown = ConfigOption(5f, "Cooldown", "Vanilla is 5");
-            formula = ConfigOption(true, "Damage Formula", "Damage based on total charge, MinDamage and MaxDamage + SpeedCoeff * (Current velocity - 30~Max Lunge Speed, depending on total charge)");
+            formula = ConfigOption(true, "Damage Formula", "Damage based on total charge, MinDamage and MaxDamage + SpeedCoeff * (Current velocity - 20~90, depending on total charge)");
             base.Init();
         }
 
