@@ -24,7 +24,7 @@ namespace HIFULoaderTweaks.Skills
         public override void Init()
         {
             damage = ConfigOption(4f, "Damage", "Decimal. Vanilla is 20");
-            aoe = ConfigOption(12f, "Area of Effect", "Vanilla is 11");
+            aoe = ConfigOption(13f, "Area of Effect", "Vanilla is 11");
             cooldown = ConfigOption(9f, "Cooldown", "Vanilla is 8");
             yVelocityCoeff = ConfigOption(0.23f, "Y Axis Speed Coefficient", "Vanilla is 0");
             formula = ConfigOption(true, "Damage Formula", "if Damage + Y Velocity * -1 * YVelocityCoeff >=\nDamage + YVelocityCoeff * 25,\nset the Damage to that");

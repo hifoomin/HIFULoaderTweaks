@@ -21,7 +21,7 @@ namespace HIFULoaderTweaks.Skills
         {
             damage = ConfigOption(1.7f, "Damage", "Decimal. Vanilla is 3.2");
             burstDamage = ConfigOption(2.3f, "Third Hit Damage", "Decimal. Vanilla is 0");
-            burstAoE = ConfigOption(12f, "Third Hit AoE", "Vanilla is 0");
+            burstAoE = ConfigOption(13f, "Third Hit AoE", "Vanilla is 0");
             fireRate = ConfigOption(2.5f, "Fire Rate", "Vanilla is 1.66666667");
             barrierGain = ConfigOption(0.033f, "Barrier Gain per Hit", "Decimal. Vanilla is 0.05");
             base.Init();
